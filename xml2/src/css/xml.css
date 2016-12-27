@@ -8,10 +8,16 @@ body{
 	font-style: italic;
 	text-decoration: underline;
 	padding: 5px;
+	color: black;
 }
-
+.back {
+	color: black;
+	margin: 5vh 0 0 5vw;
+	font-size: 20px;
+}
 .order h2{
 	text-align: center;
+	color: black;
 	font-size: 25px;
 	padding: 0 0 0 5px;
 }
@@ -27,4 +33,6 @@ body{
 
 .order table td{
 	padding:10px 40px 10px 40px;
+		border: solid;
+
 }

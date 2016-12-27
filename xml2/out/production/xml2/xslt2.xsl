@@ -3,11 +3,32 @@
     <xsl:template match="/">
         <html>
             <head>
+                <link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+                <link rel="stylesheet" type="text/css" href="../../css/main.css"/>
                 <link rel="stylesheet" type="text/css" href="css/xml.css"/>
             </head>
             <body>
+                <header>
+                    <div class="wrapper">
+                        <a href="../../index.html" class="logo">
+                        </a>
+
+                        <nav>
+                            <ul>
+                                <li><a href="../../about.html">About</a></li>
+                                <li><a href="../../devices.html">Devices</a></li>
+                                <li><a href="../../contact.html">Contacts</a></li>
+                                <li><a href="../../pers.html">Your Personal Area</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <!--  stat page title  -->
+                <section class="page_title">
+                    <h1 class="title">Orders</h1>
+                </section>
                 <div class="order">
-                    <a href="../../personal.html">Назад</a>
+                    <a href="../../personal.html" class="back">Назад</a>
                 <h1>Your Orders
                 </h1>
                 <xsl:apply-templates select="//order"/>
