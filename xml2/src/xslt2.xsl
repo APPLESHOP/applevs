@@ -2,10 +2,16 @@
 
     <xsl:template match="/">
         <html>
+            <head>
+                <link rel="stylesheet" type="text/css" href="css/xml.css"/>
+            </head>
             <body>
+                <div class="order">
+                    <a href="../../personal.html">Назад</a>
                 <h1>Your Orders
                 </h1>
                 <xsl:apply-templates select="//order"/>
+                </div>
             </body>
         </html>
     </xsl:template>
@@ -13,9 +19,6 @@
         <xsl:if test="generate-id(.)= generate-id(//order[@model=current()/@model][1])">
             <h2>
                 <xsl:value-of select="@model"/>
-            </h2>
-            <h2>
-                <xsl:value-of select="generate-id(.)"/>
             </h2>
 
 
